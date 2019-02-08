@@ -45,17 +45,26 @@ body{
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-}
 
+}
+.row__no-pad{
+  padding: 0 -10px;
+}
 .logo{
   display: flex;
   flex-direction: row;
   position: relative;
   align-items: center;
   justify-content: center;
+  background-image: url("../img/logo_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 52px;
+  margin: 0 -10px;
 }
 .logo__img{
-  position: absolute;
+  position: relative;
   align-items: center;
   justify-content: center;
 }
@@ -67,6 +76,7 @@ body{
   background-size: cover;
   background-position: center;
   text-transform: uppercase;
+  margin: 0 -10px;
 }
 .advantage__bg1{
   background-image: url("../img/advantage1.png"); 
@@ -165,9 +175,8 @@ ul.menu > li > ul > li{
   background: #3f4e86;
   height: 140px;
   width: auto;
-  padding: 10px;
+  /*padding: 10px;*/
   margin-bottom: 20px;
-  margin-right: 20px;
 }
 .info-section__icon{
   position: relative;
@@ -180,29 +189,9 @@ ul.menu > li > ul > li{
   align-items: center;
   font-size: 12px;
 }
-.header{
-  border-top: 3px solid #3f4e85;
-  padding: 22px;
-  margin-bottom: 20px;
-  margin: 0;
-}
-.wrapper{
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-.header__line{
-  background: #3f4e85;
-  color: #ffffff;
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 1px;
-}
 .footer{
   border-top: 1px solid #8a8a8a;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 .footer__line{
@@ -213,23 +202,20 @@ ul.menu > li > ul > li{
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 1px; 
-  padding: 10px 15px;
+  padding: 0px 10px;
 }
 
-.column-3-4{
-  padding-left: 10px;
-}
 [class*="column-"]{
   width: 100%;
+  padding: 0 10px;
 }
-
 
 @media(min-width: 768px){
   .column-tablet-1-2{
     max-width: 50%;
   }
-  .column-3-4{
-    max-width: 75%;
+  .column-tablet-1-4{
+    max-width: 25%
   }
 }
 
@@ -244,4 +230,3 @@ ul.menu > li > ul > li{
     max-width: 33.33%;
   }
 }
-
