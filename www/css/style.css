@@ -1,0 +1,247 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', Regular;
+}
+.header{
+  border-top: 3px solid #3f4e85;
+  padding: 22px;
+  margin-bottom: 20px;
+  margin: 0;
+}
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+}
+.header__line{
+  background: #3f4e85;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1px;
+}
+.header__line a{
+  color: #a0c5f2;
+}
+[href^="tel:"]{
+  text-decoration: none;
+  white-space: nowrap;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.logo__img{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.advantage{
+  position: relative;
+  color: #fff;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+}
+.advantage__bg1{
+  background-image: url("../img/advantage1.png"); 
+}
+.advantage__bg2{
+  background-image: url("../img/advantage2.png"); 
+}.advantage__bg3{
+  background-image: url("../img/advantage3.png"); 
+}
+.advantage__icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  width: auto;
+  position: absolute;  
+  padding: 20px;
+ 
+}
+.advantage_text{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 20px 10px 70px;
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: auto;
+}
+ul .menu{
+  padding: 0;
+  padding-right: 5px;
+  margin: 0;
+  font-size: 13px;
+}
+ul.menu > li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul.menu > li > a{
+  border: 1px solid #fff;
+  display: block;
+  text-decoration: none;
+  color: #070608;
+  padding: 10px 10px 10px 15px;
+  background-color: #e4e5e9;
+}
+ul.menu > li > a:hover{
+  background-color: #3f4e85;
+  color: #fff;
+}
+ul.menu > li > ul > li{
+  background-color: #dae0f7;
+  padding: 10px;
+
+}
+.title{
+  font-size: 24px;
+  color: #3f4e86;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.text{
+  font-size: 13px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+.text-blue{
+  color: #646f99;
+}
+.info__title{
+  font-size: 21px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.info-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  background: #3f4e86;
+  height: 140px;
+  width: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.info-section__icon{
+  position: relative;
+  justify-content: center;
+  max-height: 40px;
+}
+.info-section__text{
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+}
+.header{
+  border-top: 3px solid #3f4e85;
+  padding: 22px;
+  margin-bottom: 20px;
+  margin: 0;
+}
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header__line{
+  background: #3f4e85;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1px;
+}
+.footer{
+  border-top: 1px solid #8a8a8a;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.footer__line{
+  background: #fff;
+  color: #8a8a8a;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1px; 
+  padding: 10px 15px;
+}
+
+.column-3-4{
+  padding-left: 10px;
+}
+[class*="column-"]{
+  width: 100%;
+}
+
+
+@media(min-width: 768px){
+  .column-tablet-1-2{
+    max-width: 50%;
+  }
+  .column-3-4{
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 1000px){
+  .column-laptop-1-4{
+    max-width: 25%;
+  }
+  .column-3-4{
+    max-width: 75%;
+  }
+  .column-laptop-1-3{
+    max-width: 33.33%;
+  }
+}
+
